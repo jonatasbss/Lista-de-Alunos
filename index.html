@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Avaliação Estágio</title>
+
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/avaliacao.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+            <h1>DOM RUBI</h1>    
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <img src="img/icone.jpg">
+
+                <div id="usuario">
+
+                    <div id="nome1">
+                        <h3>Nome do Aluno</h3>
+                    </div>
+                    
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                             <div class="controls">
+                                <label class="control-label" for="email">Nome: </label>  
+                                <input id="name" type="text" placeholder="Digite seu nome" class="input-xlarge" required="">  
+                             </div>
+                        </div>                                                             
+                        <div class="control-group">                                    
+                            <div class="controls">
+                                <label class="control-label" for="password">Idade: </label>
+                                <input id="idade" name="idade" type="text" placeholder="Digite sua idade" class="input-xlarge" required="">
+                            </div>
+                        </div>                                
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="control-label" for="confirmpassword">Email: </label>
+                                <input id="email" name="email" type="email" placeholder="Digite seu email" class="input-xlarge" required="">
+                            </div>
+                        </div>                    
+                            <div class="control-group">
+                                <label class="control-label" for="button1id"></label>
+                                <div class="controls">
+                                    <button id="button1id" name="button1id" class="btn btn-success" onclick="myFunction()">Save</button>
+                                    <button id="button2id" name="button2id" class="btn btn-danger" type="reset">Cancel</button>
+                                </div>
+                            </div>
+                    </form>
+                    <div id="nome2">
+                        <h3>Lista de Alunos Salvos</h3>
+                    </div>    
+                </div>
+
+            </div>
+            
+        </section>
+
+        <footer>
+
+                <div id="resultado"></div>
+
+        </footer>
+    
+
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="js/avaliacao.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        
+        
+    </body>
+</html>
