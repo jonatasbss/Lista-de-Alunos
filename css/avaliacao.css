@@ -46,11 +46,22 @@ section form {
     color: #ff0000;
     text-align: center;
     font-family: Ranga_Bold;
-
 }
 #dados{
     margin-top: 10px;
 }
-footer{    
-   
+#resultado{
+    height: 10em;
+    display: block;
+    visibility: hidden;
+}
+#informacoes{
+    width: 450px;
+    height: 115px;
+    display: block;
+    background-color: #a5d6a7;
+    margin: 0 auto;
+    text-align: center;
+    border: #1b5e20 solid 3px;
+    font-family: Ranga_Bold;
 }
