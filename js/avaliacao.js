@@ -14,9 +14,8 @@ function myFunction(){
         document.getElementById("resultado").style.visibility = "visible";
 
         e.preventDefault();
-
+        form.reset();
         
-
     });
     
     
