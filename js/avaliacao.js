@@ -1,23 +1,38 @@
-function myFunction(){
+function myFunction() {
 
-    var form = document.getElementById('form-horizontal');
-    var name = document.getElementById('name');
-    var idade = document.getElementById('idade');
-    var email = document.getElementById('email');
+    let form = document.getElementById('form-horizontal');
+    let name = document.getElementById('name');
+    let idade = document.getElementById('idade');
+    let email = document.getElementById('email');
+
+    let resultado = document.getElementById("resultado")
+    let formName = document.getElementById('nome')
+    let formAge = document.getElementById('anos')
+    let formEmail = document.getElementById('e-mail')
+    
+    
+    form.addEventListener('submit', function (e) {
 
 
-    form.addEventListener('submit', function(e){
+        formName.innerHTML = name.value;
+        formAge.innerHTML = idade.value;
+        formEmail.innerHTML = email.value;
 
-        document.getElementById('nome').innerHTML = name.value;
-        document.getElementById('anos').innerHTML = idade.value;
-        document.getElementById('e-mail').innerHTML = email.value;
-        document.getElementById("resultado").style.visibility = "visible";
+        let info = resultado.style.visibility = "visible";
+        if (info == "hidden" ) {
+            formName.innerHTML = name.value;
+            formAge.innerHTML = idade.value;
+            formEmail.innerHTML = email.value;
+        }else{
+            name.value = "";
+            idade.value = "";
+            email.value = "";
+        }
 
         e.preventDefault();
-        form.reset();
         
-    });
-    
-    
 
+    });
+
+  
 }
